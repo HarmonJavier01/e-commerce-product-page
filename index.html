@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="Style.css">
+
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Start header -->
+        <header>
+            <div class="one-div" style="display: flex;">
+                <div id="mobile">
+                    <img src="./images//icon-menu.svg" id="bar" alt="menu-icon">
+                </div>
+                <img src="./images/logo.svg" alt="logo">
+                <nav id="navbar">
+                    <ul>
+                        <li><a href=" #">Collections</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li> <a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <img id="close" src="./images/icon-close.svg" />
+                </nav>
+            </div>
+            <!--  -->
+            <div>
+                <div class="info-header">
+                    <span id="main-count">
+            <img src="./images/icon-cart.svg" id="cart" alt="cart-itms">
+            <span id="count">0</span>
+                    <div id="cart-click" class="cart-item">
+                        <h6>Cart</h6>
+                        <div class="content empty">
+                            <p>Your cart is empty.</p>
+                        </div>
+                    </div>
+                    </span>
+                    <img class="avtart" src="./images/image-avatar.png" alt="avtart" class="info-avtar">
+                </div>
+            </div>
+        </header>
+        <!-- Start Home -->
+        <div class="detils-imgs">
+            <div class="content">
+                <i id="close-show-img" class="fa-solid fa-xmark"></i>
+                <div class="show-image">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <img src="./images/image-product-1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/image-product-2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/image-product-3.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/image-product-4.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                    </div>
+                    <!-- bar images -->
+                    <div class="show-secounds-img">
+                        <img class="gallry-show" src="./images/image-product-1.jpg" alt="">
+                        <img class="gallry-show" src="./images/image-product-2.jpg" alt="">
+                        <img class="gallry-show" src="./images/image-product-3.jpg" alt="">
+                        <img class="gallry-show" src="./images/image-product-4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="home">
+            <div class="main-div">
+                <!-- home-image -->
+                <div class="home-iamge">
+                    <div class="main-img">
+                        <img class="select-img" src="./images/image-product-1.jpg" alt="">
+                    </div>
+                    <div class="secounds-img">
+                        <img class="gallry" src="./images/image-product-1.jpg" alt="">
+                        <img class="gallry" src="./images/image-product-2.jpg" alt="">
+                        <img class="gallry" src="./images/image-product-3.jpg" alt="">
+                        <img class="gallry" src="./images/image-product-4.jpg" alt="">
+                    </div>
+                </div>
+                <!-- text-image -->
+                <div class="home-text">
+                    <h4>Sneaker Company</h4>
+                    <h1>Fall Limited Edition <br> Sneakers</h1>
+                    <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+                    <div class="price">
+                        <h2>$125.00 <span>50%</span></h2>
+                        <h2 style="color: gray; text-decoration: line-through; font-size: 16px;">$250.00 </h2>
+                    </div>
+                    <div class="control">
+                        <div class="count">
+                            <button id="decreases"><img src="./images/icon-minus.svg" alt=""></button>
+                            <h2 id="amount-value">0</h2>
+                            <button id="increases">
+                <img src="./images/icon-plus.svg" alt="">
+              </button>
+                        </div>
+                        <button id="submit" class="btn">
+              <i class="fa-solid fa-cart-shopping"></i>
+              Add To Cart
+            </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="main.js"></script>
+
+        <footer></footer>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Harmon Javier</a>.
+        </div>
+        </footer>
+</body>
+
+</html>
